@@ -24,7 +24,7 @@ body
 {
 	font-family: 'Lobster', cursive;
 	font-size: 100px;
-	color: white;
+	color: #F0F8FF;
 	margin-top: 60px;
 }
 .text1
@@ -399,7 +399,9 @@ ul>li>ul>li
 }
 ul>li.tech1
 {
+	display: block;
 	font-family: 'Oswald';
+	z-Index: 200;
 }
 ul>li.tech1:hover
 {
@@ -407,8 +409,15 @@ ul>li.tech1:hover
 }
 ul>li:hover>ul>li
 {
-	display:block;
+	display: block;
 	background-color: #F5DEB3;
+}
+@media only screen and (max-width: 768px) {
+  ul>li>ul>li{
+	top: -20px;
+	left: 60px;
+	z-Index: 100;
+  }
 }
 ul>li>ul>li>a.tech2
 {
